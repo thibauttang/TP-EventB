@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1537515118360" org.eventb.texttools.text_representation="machine batiment sees personnes&#10;&#10;variables localisation&#10;invariants @a localisation ∈ Position&#10;&#10;events&#10;&#9;event INITIALISATION then @a localisation ≔ Exterieur end&#10;&#9;event entrer&#10;&#9;&#9;when @g localisation = Exterieur&#10;&#9;&#9;then @a localisation ≔ Interieur&#10;&#9;end&#10;&#9;event sortir&#10;&#9;&#9;when @g localisation = Interieur&#10;&#9;&#9;then @a localisation ≔ Exterieur&#10;&#9;end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="_UtTeQL1sEeiTpbam-y3Ykw" org.eventb.core.target="personnes"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="_kSfqcL1sEeiTpbam-y3Ykw" org.eventb.core.assignment="localisation ≔ Exterieur" org.eventb.core.label="a"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_Qe1SsL1sEeiTpbam-y3Ykw" org.eventb.core.identifier="localisation"/>
+<org.eventb.core.invariant name="_Qe1Ssb1sEeiTpbam-y3Ykw" org.eventb.core.label="a" org.eventb.core.predicate="localisation ∈ Position"/>
+<org.eventb.core.event name="_80VBgL1sEeiTpbam-y3Ykw" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="entrer">
+<org.eventb.core.guard name="_nPX10L1tEeiTpbam-y3Ykw" org.eventb.core.label="g" org.eventb.core.predicate="localisation = Exterieur"/>
+<org.eventb.core.action name="_nPYc4L1tEeiTpbam-y3Ykw" org.eventb.core.assignment="localisation ≔ Interieur" org.eventb.core.label="a"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_2xDwIL1vEeixV8wCWdBnfg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="sortir">
+<org.eventb.core.guard name="_2xDwIb1vEeixV8wCWdBnfg" org.eventb.core.label="g" org.eventb.core.predicate="localisation = Interieur"/>
+<org.eventb.core.action name="_2xDwIr1vEeixV8wCWdBnfg" org.eventb.core.assignment="localisation ≔ Exterieur" org.eventb.core.label="a"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>

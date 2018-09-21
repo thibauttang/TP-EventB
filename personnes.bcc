@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="p" org.eventb.core.predicate="partition(Position,{Interieur},{Exterieur})" org.eventb.core.source="/TP-EVENTB/personnes.buc|org.eventb.core.contextFile#personnes|org.eventb.core.axiom#_oHTOQb1rEeiTpbam-y3Ykw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="Exterieur" org.eventb.core.source="/TP-EVENTB/personnes.buc|org.eventb.core.contextFile#personnes|org.eventb.core.constant#_oHTOQL1rEeiTpbam-y3Ykw" org.eventb.core.type="Position"/>
+<org.eventb.core.scConstant name="Interieur" org.eventb.core.source="/TP-EVENTB/personnes.buc|org.eventb.core.contextFile#personnes|org.eventb.core.constant#_oHSnMb1rEeiTpbam-y3Ykw" org.eventb.core.type="Position"/>
+<org.eventb.core.scCarrierSet name="Position" org.eventb.core.source="/TP-EVENTB/personnes.buc|org.eventb.core.contextFile#personnes|org.eventb.core.carrierSet#_oHSnML1rEeiTpbam-y3Ykw" org.eventb.core.type="ℙ(Position)"/>
+</org.eventb.core.scContextFile>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1537514608512" org.eventb.texttools.text_representation="context personnes&#10;sets Position&#10;constants Interieur Exterieur&#10;axioms&#10;&#9;@p partition(Position, {Interieur}, {Exterieur})&#10;end&#10;" version="3">
+<org.eventb.core.carrierSet name="_oHSnML1rEeiTpbam-y3Ykw" org.eventb.core.identifier="Position"/>
+<org.eventb.core.constant name="_oHSnMb1rEeiTpbam-y3Ykw" org.eventb.core.identifier="Interieur"/>
+<org.eventb.core.constant name="_oHTOQL1rEeiTpbam-y3Ykw" org.eventb.core.identifier="Exterieur"/>
+<org.eventb.core.axiom name="_oHTOQb1rEeiTpbam-y3Ykw" org.eventb.core.label="p" org.eventb.core.predicate="partition(Position, {Interieur}, {Exterieur})"/>
+</org.eventb.core.contextFile>

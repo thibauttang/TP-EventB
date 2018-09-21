@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="Position" org.eventb.core.type="ℙ(Position)"/>
+<org.eventb.core.poIdentifier name="Exterieur" org.eventb.core.type="Position"/>
+<org.eventb.core.poIdentifier name="Interieur" org.eventb.core.type="Position"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/TP-EVENTB/personnes.bpo|org.eventb.core.poFile#personnes|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(Position,{Interieur},{Exterieur})" org.eventb.core.source="/TP-EVENTB/personnes.buc|org.eventb.core.contextFile#personnes|org.eventb.core.axiom#_oHTOQb1rEeiTpbam-y3Ykw"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="Position" org.eventb.core.type="ℙ(Position)"/>
+<org.eventb.core.poIdentifier name="Exterieur" org.eventb.core.type="Position"/>
+<org.eventb.core.poIdentifier name="Interieur" org.eventb.core.type="Position"/>
+<org.eventb.core.poPredicate name="Interieus" org.eventb.core.predicate="partition(Position,{Interieur},{Exterieur})" org.eventb.core.source="/TP-EVENTB/personnes.buc|org.eventb.core.contextFile#personnes|org.eventb.core.axiom#_oHTOQb1rEeiTpbam-y3Ykw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/TP-EVENTB/batiment.bpo|org.eventb.core.poFile#batiment|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="localisation" org.eventb.core.type="Position"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTlocalisatioo" org.eventb.core.parentSet="/TP-EVENTB/batiment.bpo|org.eventb.core.poFile#batiment|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="localisation'" org.eventb.core.type="Position"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlocalisatioo" org.eventb.core.parentSet="/TP-EVENTB/batiment.bpo|org.eventb.core.poFile#batiment|org.eventb.core.poPredicateSet#EVTIDENTlocalisatioo" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTlocalisatiop" org.eventb.core.parentSet="/TP-EVENTB/batiment.bpo|org.eventb.core.poFile#batiment|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="localisation'" org.eventb.core.type="Position"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlocalisatiop" org.eventb.core.parentSet="/TP-EVENTB/batiment.bpo|org.eventb.core.poFile#batiment|org.eventb.core.poPredicateSet#EVTIDENTlocalisatiop" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="localisation=Exterieur" org.eventb.core.source="/TP-EVENTB/batiment.bum|org.eventb.core.machineFile#batiment|org.eventb.core.event#_80VBgL1sEeiTpbam-y3Ykw|org.eventb.core.guard#_nPX10L1tEeiTpbam-y3Ykw"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTlocalisatioq" org.eventb.core.parentSet="/TP-EVENTB/batiment.bpo|org.eventb.core.poFile#batiment|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="localisation'" org.eventb.core.type="Position"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPlocalisatioq" org.eventb.core.parentSet="/TP-EVENTB/batiment.bpo|org.eventb.core.poFile#batiment|org.eventb.core.poPredicateSet#EVTIDENTlocalisatioq" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="localisation=Interieur" org.eventb.core.source="/TP-EVENTB/batiment.bum|org.eventb.core.machineFile#batiment|org.eventb.core.event#_2xDwIL1vEeixV8wCWdBnfg|org.eventb.core.guard#_2xDwIb1vEeixV8wCWdBnfg"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/TP-EVENTB/batiment.bpo|org.eventb.core.poFile#batiment|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="localisation∈Position" org.eventb.core.source="/TP-EVENTB/batiment.bum|org.eventb.core.machineFile#batiment|org.eventb.core.invariant#_Qe1Ssb1sEeiTpbam-y3Ykw"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

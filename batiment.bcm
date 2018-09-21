@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scMachineFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scSeesContext name="'" org.eventb.core.scTarget="/TP-EVENTB/personnes.bcc" org.eventb.core.source="/TP-EVENTB/batiment.bum|org.eventb.core.machineFile#batiment|org.eventb.core.seesContext#_UtTeQL1sEeiTpbam-y3Ykw"/>
+<org.eventb.core.scInternalContext name="personnes">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="p" org.eventb.core.predicate="partition(Position,{Interieur},{Exterieur})" org.eventb.core.source="/TP-EVENTB/personnes.buc|org.eventb.core.contextFile#personnes|org.eventb.core.axiom#_oHTOQb1rEeiTpbam-y3Ykw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant name="Exterieur" org.eventb.core.source="/TP-EVENTB/personnes.buc|org.eventb.core.contextFile#personnes|org.eventb.core.constant#_oHTOQL1rEeiTpbam-y3Ykw" org.eventb.core.type="Position"/>
+<org.eventb.core.scConstant name="Interieur" org.eventb.core.source="/TP-EVENTB/personnes.buc|org.eventb.core.contextFile#personnes|org.eventb.core.constant#_oHSnMb1rEeiTpbam-y3Ykw" org.eventb.core.type="Position"/>
+<org.eventb.core.scCarrierSet name="Position" org.eventb.core.source="/TP-EVENTB/personnes.buc|org.eventb.core.contextFile#personnes|org.eventb.core.carrierSet#_oHSnML1rEeiTpbam-y3Ykw" org.eventb.core.type="ℙ(Position)"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scInvariant name="personnet" org.eventb.core.label="a" org.eventb.core.predicate="localisation∈Position" org.eventb.core.source="/TP-EVENTB/batiment.bum|org.eventb.core.machineFile#batiment|org.eventb.core.invariant#_Qe1Ssb1sEeiTpbam-y3Ykw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scVariable name="localisation" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/TP-EVENTB/batiment.bum|org.eventb.core.machineFile#batiment|org.eventb.core.variable#_Qe1SsL1sEeiTpbam-y3Ykw" org.eventb.core.type="Position"/>
+<org.eventb.core.scEvent name="localisatioo" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/TP-EVENTB/batiment.bum|org.eventb.core.machineFile#batiment|org.eventb.core.event#'">
+<org.eventb.core.scAction name="'" org.eventb.core.assignment="localisation ≔ Exterieur" org.eventb.core.label="a" org.eventb.core.source="/TP-EVENTB/batiment.bum|org.eventb.core.machineFile#batiment|org.eventb.core.event#'|org.eventb.core.action#_kSfqcL1sEeiTpbam-y3Ykw"/>
+</org.eventb.core.scEvent>
+<org.eventb.core.scEvent name="localisatiop" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="entrer" org.eventb.core.source="/TP-EVENTB/batiment.bum|org.eventb.core.machineFile#batiment|org.eventb.core.event#_80VBgL1sEeiTpbam-y3Ykw">
+<org.eventb.core.scGuard name="'" org.eventb.core.label="g" org.eventb.core.predicate="localisation=Exterieur" org.eventb.core.source="/TP-EVENTB/batiment.bum|org.eventb.core.machineFile#batiment|org.eventb.core.event#_80VBgL1sEeiTpbam-y3Ykw|org.eventb.core.guard#_nPX10L1tEeiTpbam-y3Ykw" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAction name="(" org.eventb.core.assignment="localisation ≔ Interieur" org.eventb.core.label="a" org.eventb.core.source="/TP-EVENTB/batiment.bum|org.eventb.core.machineFile#batiment|org.eventb.core.event#_80VBgL1sEeiTpbam-y3Ykw|org.eventb.core.action#_nPYc4L1tEeiTpbam-y3Ykw"/>
+</org.eventb.core.scEvent>
+<org.eventb.core.scEvent name="localisatioq" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="sortir" org.eventb.core.source="/TP-EVENTB/batiment.bum|org.eventb.core.machineFile#batiment|org.eventb.core.event#_2xDwIL1vEeixV8wCWdBnfg">
+<org.eventb.core.scGuard name="'" org.eventb.core.label="g" org.eventb.core.predicate="localisation=Interieur" org.eventb.core.source="/TP-EVENTB/batiment.bum|org.eventb.core.machineFile#batiment|org.eventb.core.event#_2xDwIL1vEeixV8wCWdBnfg|org.eventb.core.guard#_2xDwIb1vEeixV8wCWdBnfg" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAction name="(" org.eventb.core.assignment="localisation ≔ Exterieur" org.eventb.core.label="a" org.eventb.core.source="/TP-EVENTB/batiment.bum|org.eventb.core.machineFile#batiment|org.eventb.core.event#_2xDwIL1vEeixV8wCWdBnfg|org.eventb.core.action#_2xDwIr1vEeixV8wCWdBnfg"/>
+</org.eventb.core.scEvent>
+</org.eventb.core.scMachineFile>
